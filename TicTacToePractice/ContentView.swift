@@ -50,7 +50,7 @@ struct ContentView: View {
                         
                         isGameboardDisabled = false
                         // check for win condition
-                        if checkWinCondition(for: .human, in: moves) {
+                        if checkWinCondition(for: .computer, in: moves) {
                             alertItem = AlertContext.computerWin
                             return
                         }
